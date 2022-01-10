@@ -3,30 +3,32 @@
 }
 
 .App-logo {
-  height: 20vmin;
+  height: 3vmin; /*기준은 너비와 높이중에 짧은 것
+  데스크탑이라면 높이기준이고
+  모바일이라면 너비기준으로!*/
   pointer-events: none;
   background-color: #61dafb;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+}*/
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-link {
-  color: #61dafb;
+  color: black ;
 }
 
 @keyframes App-logo-spin {
