@@ -1,16 +1,19 @@
-// import React, {Component} from "react";
-// class Gnb extends Component {
+import React, {Component} from 'react';
+// import $ from 'jqeury';
+class Gnb extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+            bbyLink : this.props.gnblink,
+            bbyNM : this.props.gnbtext,
+            bbyTarget : this.props.gnbtarget,
+        }
+    }
+        render(){
+            return(
+                <li><a href={this.state.bbyLink} target={this.state.bbyTarget}>{this.state.bbyNM}</a></li>
+            );
+        }
+}
 
-//     constructor(prop){
-//         super(prop);
-//         this.state = {};
-//     }
-
-//         render(){
-//             return(
-//                 <ul id="gnb" className="gnb"><li>메뉴삽입</li></ul>
-//             );
-//         }
-// }
-
-// export default Gnb;
+export default Gnb;
